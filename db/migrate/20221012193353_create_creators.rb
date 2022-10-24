@@ -5,6 +5,7 @@ class CreateCreators < ActiveRecord::Migration[7.0]
       t.string :first_name
       t.string :last_name
       t.string :image_url
+      t.string :extension
 
       t.timestamps
     end

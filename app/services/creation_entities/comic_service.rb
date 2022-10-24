@@ -2,11 +2,12 @@ class CreationEntities::ComicService
   def initialize(comic:)
     @comic = {
       comic_id: comic['id'],
-      serie_id: comic['serie_id'],
+      serie_id: comic['serieId'],
       title: comic['title'],
       isbn: comic['isbn'],
       description: comic['description'],
-      image_url: comic['resourceURI'],
+      image_url: comic['thumbnail']['path'],
+      extension: comic['thumbnail']['extension'],
       page_count: comic['pageCount']
     }
   end

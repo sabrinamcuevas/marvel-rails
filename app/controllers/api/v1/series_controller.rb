@@ -12,19 +12,21 @@ module Api
       end
 
       def series
-        @pagy, @series = pagy(Serie.order(id: :asc), items: 10)
+        @pagy, @series = pagy(Serie.order(id: :desc), items: 10)
         render json: { data: @series, metadata: pagy_metadata(@pagy) }, status: :ok
       end
 
       def serie
         serie = Serie.find_by(serie_id: params[:id])
+        return not_found if serie.nil?
+
         render json: { data: serie }, status: :ok
       end
 
       private
 
       def filter_params
-        params.require(:creator_id).permit(:id, :title, :description, :startYear, :endYear, :resourceURI, :rating)
+        params.require(:creatorId).permit(:id, :title, :description, :startYear, :endYear, :resourceURI, :rating)
       end
     end
   end

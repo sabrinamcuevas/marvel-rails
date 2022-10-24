@@ -30,6 +30,8 @@ gem 'sidekiq'
 
 gem 'pagy'
 
+gem 'rack-cors'
+
 group :development, :test do
   gem 'dotenv-rails'
   gem 'rubocop'
@@ -38,4 +40,12 @@ end
 
 group :test do
   gem 'rspec'
+  gem 'vcr'
+  gem 'webmock'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'coveralls', require: false
+  gem 'simplecov', require: false
+  gem 'guard-rspec', require: false
+  gem 'database_cleaner'
 end

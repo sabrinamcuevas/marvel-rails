@@ -6,7 +6,7 @@ class MarvelImportDataWorker
     comics.each do |comic|
       characters = MarvelApi.new.characters_by_comic(comic['id'])['data']['results']
       characters.each do |character|
-        character['comic_id'] = comic['id']
+        character['comicId'] = comic['id']
         CreationEntities::CharacterService.new(character: character).call
       end
 
@@ -15,9 +15,9 @@ class MarvelImportDataWorker
         CreationEntities::CreatorService.new(creator: creator).call
         series = MarvelApi.new.series_by_creator(creator['id'])['data']['results']
         series.each do |serie|
-          serie['creator_id'] = creator['id']
+          serie['creatorId'] = creator['id']
           CreationEntities::SerieService.new(serie: serie).call
-          comic['serie_id'] = serie['id']
+          comic['serieId'] = serie['id']
           CreationEntities::ComicService.new(comic: comic).call
         end
       end

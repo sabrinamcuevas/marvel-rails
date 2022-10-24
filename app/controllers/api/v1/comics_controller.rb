@@ -12,19 +12,21 @@ module Api
       end
 
       def comics
-        @pagy, @comics = pagy(Comic.order(id: :asc), items: 10)
+        @pagy, @comics = pagy(Comic.distinct(:comic_id), items: 10)
         render json: { data: @comics, metadata: pagy_metadata(@pagy) }, status: :ok
       end
 
       def comic
         comic = Comic.find_by(comic_id: params[:id])
+        return not_found if comic.nil?
+
         render json: { data: comic }, status: :ok
       end
 
       private
 
       def filter_params
-        params.require(:serie_id).permit(:id, :title, :isbn, :description, :resourceURI, :pageCount)
+        params.require(:serieId).permit(:id, :title, :isbn, :description, :resourceURI, :pageCount)
       end
     end
   end

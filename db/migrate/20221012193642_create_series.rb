@@ -8,6 +8,7 @@ class CreateSeries < ActiveRecord::Migration[7.0]
       t.integer :start_year
       t.integer :end_year
       t.string :image_url
+      t.string :extension
       t.string :rating
 
       t.timestamps

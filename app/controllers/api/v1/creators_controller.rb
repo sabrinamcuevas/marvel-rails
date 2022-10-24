@@ -12,12 +12,14 @@ module Api
       end
 
       def creators
-        @pagy, @creators = pagy(Creator.order(id: :asc), items: 10)
+        @pagy, @creators = pagy(Creator.order(id: :desc), items: 10)
         render json: { data: @creators, metadata: pagy_metadata(@pagy) }, status: :ok
       end
 
       def creator
         creator = Creator.find_by(creator_id: params[:id])
+        return not_found if creator.nil?
+
         render json: { data: creator }, status: :ok
       end
 

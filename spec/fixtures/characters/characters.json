@@ -1,0 +1,169 @@
+{
+  "data": [
+    {
+      "id": 2,
+      "comic_id": 1308,
+      "character_id": 1009610,
+      "name": "Spider-Man (Peter Parker)",
+      "description": "Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.",
+      "image_url": "http://gateway.marvel.com/v1/public/characters/1009610",
+      "created_at": "2022-10-13T15:11:22.390Z",
+      "updated_at": "2022-10-13T15:11:22.390Z"
+    },
+    {
+      "id": 3,
+      "comic_id": 1994,
+      "character_id": 1009156,
+      "name": "Apocalypse",
+      "description": "",
+      "image_url": "http://gateway.marvel.com/v1/public/characters/1009156",
+      "created_at": "2022-10-13T15:11:40.289Z",
+      "updated_at": "2022-10-13T15:11:40.289Z"
+    },
+    {
+      "id": 4,
+      "comic_id": 1994,
+      "character_id": 1009197,
+      "name": "Blink",
+      "description": "",
+      "image_url": "http://gateway.marvel.com/v1/public/characters/1009197",
+      "created_at": "2022-10-13T15:11:40.297Z",
+      "updated_at": "2022-10-13T15:11:40.297Z"
+    },
+    {
+      "id": 5,
+      "comic_id": 1994,
+      "character_id": 1009243,
+      "name": "Colossus",
+      "description": "",
+      "image_url": "http://gateway.marvel.com/v1/public/characters/1009243",
+      "created_at": "2022-10-13T15:11:40.312Z",
+      "updated_at": "2022-10-13T15:11:40.312Z"
+    },
+    {
+      "id": 6,
+      "comic_id": 1994,
+      "character_id": 1009313,
+      "name": "Gambit",
+      "description": "",
+      "image_url": "http://gateway.marvel.com/v1/public/characters/1009313",
+      "created_at": "2022-10-13T15:11:40.320Z",
+      "updated_at": "2022-10-13T15:11:40.320Z"
+    },
+    {
+      "id": 7,
+      "comic_id": 1994,
+      "character_id": 1009349,
+      "name": "Holocaust (Age of Apocalypse)",
+      "description": "",
+      "image_url": "http://gateway.marvel.com/v1/public/characters/1009349",
+      "created_at": "2022-10-13T15:11:40.330Z",
+      "updated_at": "2022-10-13T15:11:40.330Z"
+    },
+    {
+      "id": 8,
+      "comic_id": 1994,
+      "character_id": 1009417,
+      "name": "Magneto",
+      "description": "",
+      "image_url": "http://gateway.marvel.com/v1/public/characters/1009417",
+      "created_at": "2022-10-13T15:11:40.340Z",
+      "updated_at": "2022-10-13T15:11:40.340Z"
+    },
+    {
+      "id": 9,
+      "comic_id": 1994,
+      "character_id": 1009447,
+      "name": "Mister Sinister",
+      "description": "",
+      "image_url": "http://gateway.marvel.com/v1/public/characters/1009447",
+      "created_at": "2022-10-13T15:11:40.346Z",
+      "updated_at": "2022-10-13T15:11:40.346Z"
+    },
+    {
+      "id": 10,
+      "comic_id": 1994,
+      "character_id": 1009546,
+      "name": "Rogue",
+      "description": "",
+      "image_url": "http://gateway.marvel.com/v1/public/characters/1009546",
+      "created_at": "2022-10-13T15:11:40.355Z",
+      "updated_at": "2022-10-13T15:11:40.355Z"
+    },
+    {
+      "id": 11,
+      "comic_id": 1994,
+      "character_id": 1010969,
+      "name": "Sabretooth (Age of Apocalypse)",
+      "description": "",
+      "image_url": "http://gateway.marvel.com/v1/public/characters/1010969",
+      "created_at": "2022-10-13T15:11:40.363Z",
+      "updated_at": "2022-10-13T15:11:40.363Z"
+    }
+  ],
+  "metadata": {
+    "scaffold_url": "/api/v1/characters?page=__pagy_page__",
+    "first_url": "/api/v1/characters?page=1",
+    "prev_url": "/api/v1/characters?page=",
+    "page_url": "/api/v1/characters?page=1",
+    "next_url": "/api/v1/characters?page=2",
+    "last_url": "/api/v1/characters?page=8",
+    "count": 76,
+    "page": 1,
+    "items": 10,
+    "vars": {
+      "page": 1,
+      "items": 10,
+      "outset": 0,
+      "size": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "page_param": "page",
+      "params": {},
+      "fragment": "",
+      "link_extra": "",
+      "i18n_key": "pagy.item_name",
+      "cycle": false,
+      "metadata": [
+        "scaffold_url",
+        "first_url",
+        "prev_url",
+        "page_url",
+        "next_url",
+        "last_url",
+        "count",
+        "page",
+        "items",
+        "vars",
+        "pages",
+        "last",
+        "in",
+        "from",
+        "to",
+        "prev",
+        "next",
+        "series"
+      ],
+      "count": 76
+    },
+    "pages": 8,
+    "last": 8,
+    "in": 10,
+    "from": 1,
+    "to": 10,
+    "prev": null,
+    "next": 2,
+    "series": [
+      "1",
+      2,
+      3,
+      4,
+      5,
+      "gap",
+      8
+    ]
+  }
+}

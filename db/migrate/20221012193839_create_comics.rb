@@ -6,6 +6,7 @@ class CreateComics < ActiveRecord::Migration[7.0]
       t.string :title
       t.string :description
       t.string :image_url
+      t.string :extension
       t.string :isbn
       t.integer :page_count
 

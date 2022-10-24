@@ -1,0 +1,12 @@
+{
+  "data": {
+    "id": 6,
+    "comic_id": 1994,
+    "character_id": 1009313,
+    "name": "Gambit",
+    "description": "",
+    "image_url": "http://gateway.marvel.com/v1/public/characters/1009313",
+    "created_at": "2022-10-13T15:11:40.320Z",
+    "updated_at": "2022-10-13T15:11:40.320Z"
+  }
+}

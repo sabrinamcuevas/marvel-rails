@@ -2,10 +2,11 @@ class CreationEntities::CharacterService
   def initialize(character:)
     @character = {
       character_id: character['id'],
-      comic_id: character['comic_id'],
+      comic_id: character['comicId'],
       name: character['name'],
       description: character['description'],
-      image_url: character['resourceURI']
+      image_url: character['thumbnail']['path'],
+      extension: character['thumbnail']['extension']
     }
   end
 

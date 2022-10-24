@@ -4,7 +4,8 @@ class CreationEntities::CreatorService
       creator_id: creator['id'],
       first_name: creator['firstName'],
       last_name: creator['lastName'],
-      image_url: creator['resourceURI']
+      image_url: creator['thumbnail']['path'],
+      extension: creator['thumbnail']['extension'],
     }
   end
 

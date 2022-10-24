@@ -12,7 +12,7 @@ module Api
       end
 
       def characters
-        @pagy, @characters = pagy(Character.order(id: :asc), items: 10)
+        @pagy, @characters = pagy(Character.order(id: :desc), items: 10)
         render json: { data: @characters, metadata: pagy_metadata(@pagy) }, status: :ok
       end
 
@@ -26,7 +26,7 @@ module Api
       private
 
       def filter_params
-        params.require(:comic_id).permit(:id, :name, :description, :resourceURI, :page)
+        params.require(:comicId).permit(:id, :name, :description, :resourceURI, :page)
       end
     end
   end
