@@ -1,24 +1,22 @@
-# README
+## Marvel Universe
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+---
 
-Things you may want to cover:
+This is a very simple project in that it consists of consuming the [Marvel](https://developer.marvel.com/docs) APIs to store the data in a postgresql database and then putting together a set of endpoints to list and create each section.
 
-* Ruby version
+To save all the data a task is created where it will run in the background using Sidekiq the data of characters, series, comics and creators.
 
-* System dependencies
+The frontend is built in React and you can see it [here](https://github.com/sabrinamcuevas/marvel-react).
 
-* Configuration
+For this project we used:
 
-* Database creation
+Ruby: ![](https://img.shields.io/badge/Ruby-3.0.2-red)
 
-* Database initialization
+[Webmock](https://github.com/bblimke/webmock) for the tests
 
-* How to run the test suite
+[Pagy](https://github.com/ddnexus/pagy) para la paginacion
 
-* Services (job queues, cache servers, search engines, etc.)
+[Sidekiq](https://github.com/mperham/sidekiq) para el procesado de los datos en segundo plano
 
-* Deployment instructions
 
-* ...
+
